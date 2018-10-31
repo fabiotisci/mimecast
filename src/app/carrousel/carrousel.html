@@ -1,0 +1,19 @@
+<div class="carrousel">
+    <div *ngIf="error">{{error}}</div>
+    <div *ngIf="photos.length">
+      <app-carrousel-thumbnail
+        (onClick)="previousPhoto()"
+        [photo]="photos[previousPhotoIndex]">
+      </app-carrousel-thumbnail>
+      <app-carrousel-item
+        [photo]="photos[currentPhotoIndex]">
+      </app-carrousel-item>
+      <app-carrousel-thumbnail
+        (onClick)="nextPhoto()"
+        [photo]="photos[nextPhotoIndex]">
+      </app-carrousel-thumbnail>      
+    </div>
+    <div *ngIf="!photos.length">
+      LOADING PHOTOS ....
+    </div>
+</div>

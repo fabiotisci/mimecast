@@ -1,0 +1,22 @@
+.carrousel{
+  width: 930px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carrousel  app-carrousel-item {
+  width:600px;
+}
+
+.carrousel  app-carrousel-thumbnail, .carrousel  app-carrousel-item {
+  float: left;
+}
+
+.carrousel  app-carrousel-thumbnail:first-child {
+  margin: 225px 15px 0 0;
+}
+
+.carrousel  app-carrousel-thumbnail:last-child {
+  margin: 225px 0 0 15px;
+}

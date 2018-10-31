@@ -12,4 +12,12 @@ export class MimecastPage {
   getThumbnailsLength() {
     return element.all(by.css('app-carrousel-thumbnail')).count();
   }
+
+  clickPreviousPhoto() {
+    return element.all(by.css('app-carrousel-thumbnail')).first().click();
+  }
+
+  clickNextPhoto() {
+    return element.all(by.css('app-carrousel-thumbnail')).last().click();
+  }
 }
